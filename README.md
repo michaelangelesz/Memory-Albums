@@ -35,5 +35,5 @@ doors.jpeg
 Diltz, Henry. Cover art for the Morrison Hotel album by The Doors. 1970. Record label: Elektra.
 image sourced from https://thedoors.com/music
 
-vinyl.jpeg - used for back of card
-image sourced from https://pixabay.com/photos/vinyl-turntable-electronics-music-1845272/
+cassette.jpeg - used for back of card
+image sourced from https://pixabay.com/photos/announcer-audio-neon-cassette-316585/

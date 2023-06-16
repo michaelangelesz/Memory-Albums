@@ -1,7 +1,7 @@
 // grab a couple of elements
 const section = document.querySelector("section");
 const playerLivesCount = document.querySelector("span");
-let playerLives = 12;
+let playerLives = 16;
 
 // link text
 playerLivesCount.textContent = playerLives;
@@ -47,7 +47,7 @@ const cardGenerator = () => {
     back.classList = "back";
     // attach the info to the cards
     face.src = item.imgSrc;
-    back.src = "../images/vinyl.jpeg";
+    back.src = "../images/cassette.jpeg";
     card.setAttribute("name", item.name);
     // attach the info to the section
     section.appendChild(card);
@@ -68,7 +68,7 @@ const checkCards = (e) => {
   const clickedCard = e.target;
   clickedCard.classList.add("flipped");
   const flippedCards = document.querySelectorAll(".flipped");
-    const toggleCard = document.querySelectorAll(".toggleCard");
+  const toggleCard = document.querySelectorAll(".toggleCard");
   console.log(flippedCards);
   // logic:
   if (flippedCards.length === 2) {
@@ -93,14 +93,15 @@ const checkCards = (e) => {
       });
       playerLives--;
       playerLivesCount.textContent = playerLives;
-      if (playerLives === 0) {
-        restart("Bummer! You Lose!");
-      }
+      if (playerLives === 0)
+        setTimeout(() => {
+          restart("Bummer! 😵‍💫 You Lose!");
+        }, 1000);
     }
   }
   // check for win
   if (toggleCard.length === 16) {
-    restart("🤘 You Rock!");
+    restart("Yes! 🤘 You Rock!");
   }
 };
 
@@ -120,10 +121,36 @@ const restart = (text) => {
       section.style.pointerEvents = "all";
     }, 1000);
   });
-  playerLives = 12;
+  playerLives = 16;
   playerLivesCount.textContent = playerLives;
   // win/lose text
-  setTimeout(() => window.alert(text), 100);
+  // create message div
+  setTimeout(() => {
+    const messageDiv = document.createElement("div");
+    messageDiv.setAttribute("id", "message");
+    messageDiv.textContent = text;
+
+    // create play again button
+    const playAgainBtn = document.createElement("button");
+    playAgainBtn.textContent = "Play Again";
+    playAgainBtn.addEventListener("click", () => {
+      restart("Nice! 🤘 You rock!");
+      messageDiv.style.opacity = "0";
+      setTimeout(() => {
+        messageDiv.remove();
+      }, 300);
+    });
+
+    // add play again button to message div
+    messageDiv.appendChild(playAgainBtn);
+
+    document.body.appendChild(messageDiv);
+
+    // animate message div
+    messageDiv.style.opacity = "0.9";
+  }, 500);
 };
 
 cardGenerator();
+
+//it tells me I win too much too soon and doesnt quit
