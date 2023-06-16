@@ -62,48 +62,48 @@ const cardGenerator = () => {
   });
 };
 
+let flippedCards = 0;
+
 // check for a match
-const checkCards = (e) => {
-  console.log(e);
-  const clickedCard = e.target;
-  clickedCard.classList.add("flipped");
-  const flippedCards = document.querySelectorAll(".flipped");
-  const toggleCard = document.querySelectorAll(".toggleCard");
-  console.log(flippedCards);
-  // logic:
-  if (flippedCards.length === 2) {
-    if (
-      flippedCards[0].getAttribute("name") ===
-      flippedCards[1].getAttribute("name")
-    ) {
-      console.log("match");
-      // leave cards flipped if match
-      flippedCards.forEach((card) => {
-        card.classList.remove("flipped");
-        card.style.pointerEvents = "none";
-      });
-    } else {
-      console.log("wrong");
-      // flip cards back if not match
-      flippedCards.forEach((card) => {
-        card.classList.remove("flipped");
-        setTimeout(() => {
-          card.classList.remove("toggleCard");
-        }, 1000);
-      });
-      playerLives--;
-      playerLivesCount.textContent = playerLives;
-      if (playerLives === 0)
-        setTimeout(() => {
-          restart("Bummer! 😵‍💫 You Lose!");
-        }, 1000);
+function checkCards(e) {
+    console.log(e);
+    const clickedCard = e.target;
+    clickedCard.classList.add("flipped");
+    const flippedCards = document.querySelectorAll(".flipped");
+    const toggleCard = document.querySelectorAll(".toggleCard");
+    console.log(flippedCards);
+    // logic:
+    if (flippedCards.length === 2) {
+        if (flippedCards[0].getAttribute("name") ===
+            flippedCards[1].getAttribute("name")) {
+            console.log("match");
+            // leave cards flipped if match
+            flippedCards.forEach((card) => {
+                card.classList.remove("flipped");
+                card.style.pointerEvents = "none";
+            });
+        } else {
+            console.log("wrong");
+            // flip cards back if not match
+            flippedCards.forEach((card) => {
+                card.classList.remove("flipped");
+                setTimeout(() => {
+                    card.classList.remove("toggleCard");
+                }, 1000);
+            });
+            playerLives--;
+            playerLivesCount.textContent = playerLives;
+            if (playerLives === 0)
+                setTimeout(() => {
+                    restart("Bummer! 😵‍💫 You Lose!");
+                }, 500);
+        }
     }
-  }
-  // check for win
-  if (toggleCard.length === 16) {
-    restart("Yes! 🤘 You Rock!");
-  }
-};
+    // check for win
+    if (flippedCards.length === 16) {
+        restart("Yes! 🤘 You Rock!");
+    }
+}
 
 //Restart game
 const restart = (text) => {
