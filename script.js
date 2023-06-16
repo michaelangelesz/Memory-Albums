@@ -51,6 +51,11 @@ const cardGenerator = () => {
     section.appendChild(card);
     card.appendChild(face);
     card.appendChild(back);
+    // make the cards flip
+    card.addEventListener("click", (e) => {
+        face.classList.toggle("toggleCard");
+        card.classList.toggle("toggleCard");
+        });
   });
 };
 
