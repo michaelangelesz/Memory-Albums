@@ -1,29 +1,31 @@
 // grab a couple of elements
 const section = document.querySelector("section");
 const playerLivesCount = document.querySelector("span");
-let playerLives = 16;
+let playerLives = 7;
 
 // link text
 playerLivesCount.textContent = playerLives;
 
 // generate the data
 const getData = () => [
-  { imgSrc: "../images/bboys.jpeg", name: "bboys" },
-  { imgSrc: "../images/bjork.jpeg", name: "bjork" },
-  { imgSrc: "../images/cure.jpeg", name: "cure" },
-  { imgSrc: "../images/doors.jpeg", name: "doors" },
-  { imgSrc: "../images/floyd.jpeg", name: "floyd" },
-  { imgSrc: "../images/marley.jpeg", name: "marley" },
-  { imgSrc: "../images/tribe.jpeg", name: "tribe" },
-  { imgSrc: "../images/u2.jpeg", name: "u2" },
-  { imgSrc: "../images/bboys.jpeg", name: "bboys" },
-  { imgSrc: "../images/bjork.jpeg", name: "bjork" },
-  { imgSrc: "../images/cure.jpeg", name: "cure" },
-  { imgSrc: "../images/doors.jpeg", name: "doors" },
-  { imgSrc: "../images/floyd.jpeg", name: "floyd" },
-  { imgSrc: "../images/marley.jpeg", name: "marley" },
-  { imgSrc: "../images/tribe.jpeg", name: "tribe" },
-  { imgSrc: "../images/u2.jpeg", name: "u2" },
+    { imgSrc: "../assets/1_theMagician.jpeg", name: "TheMagician" },
+    { imgSrc: "../assets/2_theHighPriestess.jpeg", name: "TheHighPriestess" },
+    { imgSrc: "../assets/3_theEmpress.jpeg", name: "TheEmpress" },
+    { imgSrc: "../assets/4_theEmperor.jpeg", name: "TheEmperor" },
+    { imgSrc: "../assets/5_theHierophant.jpeg", name: "TheHierophant" },
+    { imgSrc: "../assets/6_theLovers.jpeg", name: "TheLovers" },
+    { imgSrc: "../assets/7_theChariot.jpeg", name: "TheChariot" },
+    { imgSrc: "../assets/8_Strength.jpeg", name: "Strength" },
+    { imgSrc: "../assets/9_theHermit.jpeg", name: "TheHermit" },
+    { imgSrc: "../assets/1_theMagician.jpeg", name: "TheMagician" },
+    { imgSrc: "../assets/2_theHighPriestess.jpeg", name: "TheHighPriestess" },
+    { imgSrc: "../assets/3_theEmpress.jpeg", name: "TheEmpress" },
+    { imgSrc: "../assets/4_theEmperor.jpeg", name: "TheEmperor" },
+    { imgSrc: "../assets/5_theHierophant.jpeg", name: "TheHierophant" },
+    { imgSrc: "../assets/6_theLovers.jpeg", name: "TheLovers" },
+    { imgSrc: "../assets/7_theChariot.jpeg", name: "TheChariot" },
+    { imgSrc: "../assets/8_Strength.jpeg", name: "Strength" },
+    { imgSrc: "../assets/9_theHermit.jpeg", name: "TheHermit" },
 ];
 
 // randomize the cards
@@ -47,7 +49,7 @@ const cardGenerator = () => {
     back.classList = "back";
     // attach the info to the cards
     face.src = item.imgSrc;
-    back.src = "../images/cassette.jpeg";
+    back.src = "../assets/backOfCard.jpg";
     card.setAttribute("name", item.name);
     // attach the info to the section
     section.appendChild(card);
@@ -95,12 +97,12 @@ function checkCards(e) {
             playerLivesCount.textContent = playerLives;
             if (playerLives === 0)
                 setTimeout(() => {
-                    restart("Bummer! 😵‍💫 You Lose!");
+                    restart("😵‍💫 GAME OVER 😵‍💫");
                 }, 500);
         }
     }
     // check for win
-    if (flippedCards.length === 16) {
+    if (flippedCards.length === 18) {
         restart("Yes! 🤘 You Rock!");
     }
 }
@@ -121,7 +123,7 @@ const restart = (text) => {
       section.style.pointerEvents = "all";
     }, 1000);
   });
-  playerLives = 16;
+  playerLives = 7;
   playerLivesCount.textContent = playerLives;
   // win/lose text
   // create message div
@@ -134,7 +136,6 @@ const restart = (text) => {
     const playAgainBtn = document.createElement("button");
     playAgainBtn.textContent = "Play Again";
     playAgainBtn.addEventListener("click", () => {
-      restart("Nice! 🤘 You rock!");
       messageDiv.style.opacity = "0";
       setTimeout(() => {
         messageDiv.remove();
@@ -147,10 +148,8 @@ const restart = (text) => {
     document.body.appendChild(messageDiv);
 
     // animate message div
-    messageDiv.style.opacity = "0.9";
+    messageDiv.style.opacity = "1";
   }, 500);
 };
 
 cardGenerator();
-
-//it tells me I win too much too soon and doesnt quit

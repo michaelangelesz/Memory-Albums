@@ -1,7 +1,7 @@
 # Memory-Albums
 Milestone Project 1
 
-Album cover art image citations:
+## Album cover art image citations:
 
 floyd.jpeg
 Thorgerson, Storm and Hipgnosis. Cover art for the Dark Side of the Moon album by Pink Floyd. 1973. Record label: Harvest.
@@ -37,3 +37,16 @@ image sourced from https://thedoors.com/music
 
 cassette.jpeg - used for back of card
 image sourced from https://pixabay.com/photos/announcer-audio-neon-cassette-316585/
+
+
+# Tarot-Card-Game tarot.css tarot.js
+## Rider Waite Smith Tarot Deck history and citation:
+
+The Rider Waite Smith Tarot Deck is a classic tarot deck first published in 1909 by US Games Systems, Inc. It was created by Arthur Edward Waite, a British occultist and author, and Pamela Colman Smith, an American artist and illustrator. The deck features 78 cards, each with its own unique symbolism and meaning, and is widely used for divination, meditation, and spiritual guidance.
+
+I acknowledge the creators and publishers of the Rider Waite Smith Tarot Deck for their contribution to the world of tarot and divination, and I use their work with respect, appreciation, and reverence.
+
+- Title: Rider Waite Smith Tarot Deck
+- Creator: Arthur Edward Waite (author) and Pamela Colman Smith (artist)
+- Publisher: US Games Systems, Inc.
+- Year: 1909 (first edition)
