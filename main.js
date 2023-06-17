@@ -1,7 +1,7 @@
 // grab a couple of elements
 const section = document.querySelector("section");
 const playerLivesCount = document.querySelector("span");
-let playerLives = 11;
+let playerLives = 1000;
 
 // link text
 playerLivesCount.textContent = playerLives;
@@ -9,27 +9,27 @@ playerLivesCount.textContent = playerLives;
 // generate the data
 const getData = () => [
   { imgSrc: "../images/bboys.jpeg", name: "bboys" },
-  { imgSrc: "../images/bjork.jpeg", name: "bjork" },
-  { imgSrc: "../images/cure.jpeg", name: "cure" },
-  { imgSrc: "../images/doors.jpeg", name: "doors" },
-  { imgSrc: "../images/floyd.jpeg", name: "floyd" },
-  { imgSrc: "../images/marley.jpeg", name: "marley" },
-  { imgSrc: "../images/tribe.jpeg", name: "tribe" },
-  { imgSrc: "../images/u2.jpeg", name: "u2" },
   { imgSrc: "../images/bboys.jpeg", name: "bboys" },
   { imgSrc: "../images/bjork.jpeg", name: "bjork" },
+  { imgSrc: "../images/bjork.jpeg", name: "bjork" },
+  { imgSrc: "../images/cure.jpeg", name: "cure" },
   { imgSrc: "../images/cure.jpeg", name: "cure" },
   { imgSrc: "../images/doors.jpeg", name: "doors" },
+  { imgSrc: "../images/doors.jpeg", name: "doors" },
+  { imgSrc: "../images/floyd.jpeg", name: "floyd" },
   { imgSrc: "../images/floyd.jpeg", name: "floyd" },
   { imgSrc: "../images/marley.jpeg", name: "marley" },
+  { imgSrc: "../images/marley.jpeg", name: "marley" },
   { imgSrc: "../images/tribe.jpeg", name: "tribe" },
+  { imgSrc: "../images/tribe.jpeg", name: "tribe" },
+  { imgSrc: "../images/u2.jpeg", name: "u2" },
   { imgSrc: "../images/u2.jpeg", name: "u2" },
 ];
 
 // randomize the cards
 const randomize = () => {
   const cardData = getData();
-  cardData.sort(() => Math.random() - 0.5); // randomize the cards
+  //cardData.sort(() => Math.random() - 0.5); // randomize the cards
   return cardData;
 };
 
@@ -62,7 +62,7 @@ const cardGenerator = () => {
   });
 };
 
-let flippedCards = 0;
+let toggleCard = 0;
 
 // check for a match
 function checkCards(e) {
@@ -72,6 +72,7 @@ function checkCards(e) {
   const flippedCards = document.querySelectorAll(".flipped");
   const toggleCard = document.querySelectorAll(".toggleCard");
   console.log(flippedCards);
+  console.log(toggleCard.length);
   // logic:
   if (flippedCards.length === 2) {
     if (
@@ -102,10 +103,13 @@ function checkCards(e) {
     }
   }
   // check for win
-  if (flippedCards.length === 16) {
-    //flippedCards++;
-    restart("Yes! 🤘 You Rock!");
-  }
+  if (toggleCard.length === 32) {
+      restart("Awesome! 🤘 You Rock!");
+    }
+  //flippedCards++;
+  // if (flippedCards.length === 16) {
+  //   restart("Awesome! 🤘 You Rock!");
+  // }
 }
 
 //Restart game
@@ -124,7 +128,7 @@ const restart = (text) => {
       section.style.pointerEvents = "all";
     }, 1000);
   });
-  playerLives = 11;
+  playerLives = 1000;
   playerLivesCount.textContent = playerLives;
   // win/lose text
   // create message div
@@ -145,7 +149,6 @@ const restart = (text) => {
 
     // add play again button to message div
     messageDiv.appendChild(playAgainBtn);
-
     document.body.appendChild(messageDiv);
 
     // animate message div

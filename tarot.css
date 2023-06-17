@@ -85,7 +85,7 @@ section {
   padding: 20px;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  z-index: 9999;
+  z-index: 1;
 }
 
 #message button {
