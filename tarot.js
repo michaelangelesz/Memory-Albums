@@ -1,31 +1,31 @@
 // grab a couple of elements
 const section = document.querySelector("section");
 const playerLivesCount = document.querySelector("span");
-let playerLives = 7;
+let playerLives = 12;
 
 // link text
 playerLivesCount.textContent = playerLives;
 
 // generate the data
 const getData = () => [
-    { imgSrc: "../assets/1_theMagician.jpeg", name: "TheMagician" },
-    { imgSrc: "../assets/2_theHighPriestess.jpeg", name: "TheHighPriestess" },
-    { imgSrc: "../assets/3_theEmpress.jpeg", name: "TheEmpress" },
-    { imgSrc: "../assets/4_theEmperor.jpeg", name: "TheEmperor" },
-    { imgSrc: "../assets/5_theHierophant.jpeg", name: "TheHierophant" },
-    { imgSrc: "../assets/6_theLovers.jpeg", name: "TheLovers" },
-    { imgSrc: "../assets/7_theChariot.jpeg", name: "TheChariot" },
-    { imgSrc: "../assets/8_Strength.jpeg", name: "Strength" },
-    { imgSrc: "../assets/9_theHermit.jpeg", name: "TheHermit" },
-    { imgSrc: "../assets/1_theMagician.jpeg", name: "TheMagician" },
-    { imgSrc: "../assets/2_theHighPriestess.jpeg", name: "TheHighPriestess" },
-    { imgSrc: "../assets/3_theEmpress.jpeg", name: "TheEmpress" },
-    { imgSrc: "../assets/4_theEmperor.jpeg", name: "TheEmperor" },
-    { imgSrc: "../assets/5_theHierophant.jpeg", name: "TheHierophant" },
-    { imgSrc: "../assets/6_theLovers.jpeg", name: "TheLovers" },
-    { imgSrc: "../assets/7_theChariot.jpeg", name: "TheChariot" },
-    { imgSrc: "../assets/8_Strength.jpeg", name: "Strength" },
-    { imgSrc: "../assets/9_theHermit.jpeg", name: "TheHermit" },
+  { imgSrc: "../assets/1_theMagician.jpeg", name: "TheMagician" },
+  { imgSrc: "../assets/2_theHighPriestess.jpeg", name: "TheHighPriestess" },
+  { imgSrc: "../assets/3_theEmpress.jpeg", name: "TheEmpress" },
+  { imgSrc: "../assets/4_theEmperor.jpeg", name: "TheEmperor" },
+  { imgSrc: "../assets/5_theHierophant.jpeg", name: "TheHierophant" },
+  { imgSrc: "../assets/6_theLovers.jpeg", name: "TheLovers" },
+  { imgSrc: "../assets/7_theChariot.jpeg", name: "TheChariot" },
+  { imgSrc: "../assets/8_Strength.jpeg", name: "Strength" },
+  { imgSrc: "../assets/9_theHermit.jpeg", name: "TheHermit" },
+  { imgSrc: "../assets/1_theMagician.jpeg", name: "TheMagician" },
+  { imgSrc: "../assets/2_theHighPriestess.jpeg", name: "TheHighPriestess" },
+  { imgSrc: "../assets/3_theEmpress.jpeg", name: "TheEmpress" },
+  { imgSrc: "../assets/4_theEmperor.jpeg", name: "TheEmperor" },
+  { imgSrc: "../assets/5_theHierophant.jpeg", name: "TheHierophant" },
+  { imgSrc: "../assets/6_theLovers.jpeg", name: "TheLovers" },
+  { imgSrc: "../assets/7_theChariot.jpeg", name: "TheChariot" },
+  { imgSrc: "../assets/8_Strength.jpeg", name: "Strength" },
+  { imgSrc: "../assets/9_theHermit.jpeg", name: "TheHermit" },
 ];
 
 // randomize the cards
@@ -68,43 +68,45 @@ let flippedCards = 0;
 
 // check for a match
 function checkCards(e) {
-    console.log(e);
-    const clickedCard = e.target;
-    clickedCard.classList.add("flipped");
-    const flippedCards = document.querySelectorAll(".flipped");
-    const toggleCard = document.querySelectorAll(".toggleCard");
-    console.log(flippedCards);
-    // logic:
-    if (flippedCards.length === 2) {
-        if (flippedCards[0].getAttribute("name") ===
-            flippedCards[1].getAttribute("name")) {
-            console.log("match");
-            // leave cards flipped if match
-            flippedCards.forEach((card) => {
-                card.classList.remove("flipped");
-                card.style.pointerEvents = "none";
-            });
-        } else {
-            console.log("wrong");
-            // flip cards back if not match
-            flippedCards.forEach((card) => {
-                card.classList.remove("flipped");
-                setTimeout(() => {
-                    card.classList.remove("toggleCard");
-                }, 1000);
-            });
-            playerLives--;
-            playerLivesCount.textContent = playerLives;
-            if (playerLives === 0)
-                setTimeout(() => {
-                    restart("😵‍💫 GAME OVER 😵‍💫");
-                }, 500);
-        }
+  console.log(e);
+  const clickedCard = e.target;
+  clickedCard.classList.add("flipped");
+  const flippedCards = document.querySelectorAll(".flipped");
+  const toggleCard = document.querySelectorAll(".toggleCard");
+  console.log(flippedCards);
+  // logic:
+  if (flippedCards.length === 2) {
+    if (
+      flippedCards[0].getAttribute("name") ===
+      flippedCards[1].getAttribute("name")
+    ) {
+      console.log("match");
+      // leave cards flipped if match
+      flippedCards.forEach((card) => {
+        card.classList.remove("flipped");
+        card.style.pointerEvents = "none";
+      });
+    } else {
+      console.log("wrong");
+      // flip cards back if not match
+      flippedCards.forEach((card) => {
+        card.classList.remove("flipped");
+        setTimeout(() => {
+          card.classList.remove("toggleCard");
+        }, 1000);
+      });
+      playerLives--;
+      playerLivesCount.textContent = playerLives;
+      if (playerLives === 0)
+        setTimeout(() => {
+          restart("😵‍💫 GAME OVER 😵‍💫");
+        }, 500);
     }
-    // check for win
-    if (flippedCards.length === 18) {
-        restart("Yes! 🤘 You Rock!");
-    }
+  }
+  // check for win
+  if (flippedCards.length === 18) {
+    restart("Yes! 🤘 You Rock!");
+  }
 }
 
 //Restart game
@@ -123,7 +125,7 @@ const restart = (text) => {
       section.style.pointerEvents = "all";
     }, 1000);
   });
-  playerLives = 7;
+  playerLives = 12;
   playerLivesCount.textContent = playerLives;
   // win/lose text
   // create message div
