@@ -85,7 +85,7 @@ function checkForMatch() {
 
 function gameOver() {
   lockBoard = true;
-  const text = "Bummer! 😵‍💫 You Lose!";
+  const text = "Bummer! 😵‍💫 You lose!";
   setTimeout(() => {
     const messageDiv = document.createElement("div");
     messageDiv.setAttribute("id", "message");
@@ -112,7 +112,7 @@ function gameOver() {
 }
 
 function winGame() {
-  const text = "Awesome! 🤘 You win!";
+  const text = "Awesome! 🤘 You rock!";
   setTimeout(() => {
     // create message div
     const messageDiv = document.createElement("div");
@@ -127,7 +127,7 @@ function winGame() {
       messageDiv.style.opacity = "0";
       setTimeout(() => {
         messageDiv.remove();
-      }, 300);
+      }, 700);
     });
 
     // add play again button to message div
