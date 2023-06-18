@@ -1,7 +1,7 @@
 const cards = document.querySelectorAll(".memory-card");
 
 const playerLivesCount = document.querySelector("span");
-let playerLives = 1;
+let playerLives = 12;
 
 // link text
 playerLivesCount.textContent = playerLives;
@@ -47,7 +47,7 @@ function checkForMatch() {
     secondCard.removeEventListener("click", flipCard);
     count++;
     console.log("Function has been called " + count + " times.");
-    if (count === 10) {
+    if (count === 12) {
         winGame();
     }
     resetBoard();
@@ -76,12 +76,12 @@ function checkForMatch() {
   }
 }
 
-// (function shuffle() {
-//   cards.forEach((card) => {
-//     let randomPos = Math.floor(Math.random() * 18);
-//     card.style.order = randomPos;
-//   });
-// })();
+(function shuffle() {
+  cards.forEach((card) => {
+    let randomPos = Math.floor(Math.random() * 18);
+    card.style.order = randomPos;
+  });
+})();
 
 function gameOver() {
   lockBoard = true;
