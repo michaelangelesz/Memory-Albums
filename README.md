@@ -35,6 +35,14 @@ doors.jpeg
 Diltz, Henry. Cover art for the Morrison Hotel album by The Doors. 1970. Record label: Elektra.
 image sourced from https://thedoors.com/music
 
+madonna.jpeg
+Ayeroff, Jeffrey Kent and Jeri Heiden. Cover art for the Like a Virgin album by Madonna. 1984. Record label: Sire Records.
+image sourced from https://www.madonna.com/discography/album/2/
+
+jimi.jpeg
+Havlicek, Karl and Kosh. Cover art for the Electric Ladyland album by the Jimi Hendrix Experience. 1968. Record label: Reprise Records.
+image sourced from https://www.jimihendrix.com/music/electric-ladyland-cddvd-deluxe-vinyl-editions/#content
+
 cassette.jpeg - used for back of card
 image sourced from https://pixabay.com/photos/announcer-audio-neon-cassette-316585/
 

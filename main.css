@@ -1,17 +1,19 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
 body {
   height: 100vh;
+  width: 100vw;
   background: #74ebd5;
   background: -webkit-linear-gradient(to right, #77f3dc, #7f92e8);
   background: linear-gradient(to right, #77f3dc, #7f92e8);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  background-position: center center;
+  text-align: center;
+  font-family: Papyrus;
   flex-direction: column;
 }
 
@@ -20,42 +22,62 @@ h1 {
   font-size: 3rem;
 }
 
-section {
-  display: grid;
-  grid-template-columns: repeat(4, 11rem);
-  grid-template-rows: repeat(4, 11rem);
-  grid-gap: 1rem;
+h2 {
+  color: rgb(66, 33, 9);
+  text-align: center;
+  letter-spacing: 1.1px;
+  font-size: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* card styling and layout */
+.memory-game {
+  width: 1000px;
+  height: 500px;
+  margin: auto;
+  margin-top: 11px;
+  display: flex;
+  flex-wrap: wrap;
   perspective: 1000px;
 }
 
-.card {
+.memory-card {
+  width: calc(20% - 10px);
+  height: calc(40% - 10px);
+  margin: 5px;
   position: relative;
+  transform: scale(1);
   transform-style: preserve-3d;
   transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
-.face,
-.back {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  pointer-events: none; /* This is important */
+.memory-card:active {
+  transform: scale(0.98);
 }
 
-.back {
-  background: #fff;
-  backface-visibility: hidden;
-}
-
-.toggleCard {
+.memory-card.flip {
   transform: rotateY(180deg);
 }
 
-.face {
-  transform: rotateY(-180deg);
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: antiquewhite;
+  backface-visibility: hidden;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  top: 0;
+  left: 0;
 }
 
+.front-face {
+  transform: rotateY(180deg);
+}
+
+/* win/lose message divs */
 #message {
   position: fixed;
   display: flex;
@@ -67,6 +89,9 @@ section {
   background: #74ebd5;
   background: -webkit-linear-gradient(to right, #77f3dc, #7f92e8);
   background: linear-gradient(to right, #77f3dc, #7f92e8);
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 100% auto;
   font-family: papyrus;
   color: indigo;
   text-align: center;
@@ -75,7 +100,7 @@ section {
   font-size: 77px;
   padding: 20px;
   opacity: 0;
-  transition: opacity 2s ease-in-out;
+  transition: opacity 3s ease-in-out;
   z-index: 1;
 }
 
@@ -89,5 +114,5 @@ section {
   border-radius: 100px;
   cursor: pointer;
   margin-top: 20px;
-  transition: all 2s ease-in-out;
+  transition: all 1.1s ease-in-out;
 }
