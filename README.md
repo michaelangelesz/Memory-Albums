@@ -1,9 +1,11 @@
-# Memory-Albums
-Milestone Project 1
+## Memory-Albums
+# Milestone Project 1
 
 Memory was a favorite game when I was a kid, so it has been fun recreating it. 
 
 The theme of this game is music albums! I relish any opportunity to share my favorites.
+
+Please enjoy my game! It is fun to look at.
 
 ## Album cover art citations:
 
