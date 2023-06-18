@@ -11,23 +11,25 @@ body {
   background: -webkit-linear-gradient(to right, #77f3dc, #7f92e8);
   background: linear-gradient(to right, #77f3dc, #7f92e8);
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-position: center center;
   text-align: center;
   font-family: Papyrus;
+  color: indigo;
   flex-direction: column;
 }
 
 h1 {
   font-family: papyrus;
-  font-size: 3rem;
+  font-size: 4rem;
+  margin-top: 3rem;
 }
 
 h2 {
-  color: rgb(66, 33, 9);
+  color: indigo;
   text-align: center;
-  letter-spacing: 1.1px;
-  font-size: 27px;
-  display: flex;
+  font-size: 3rem;
   justify-content: center;
   align-items: center;
 }
