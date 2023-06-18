@@ -22,7 +22,7 @@ body {
 
 h1 {
   font-family: papyrus;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-top: 3rem;
 }
 
@@ -36,8 +36,8 @@ h2 {
 
 /* card styling and layout */
 .memory-game {
-  width: 1200px;
-  height: 500px;
+  width: 1000px;
+  height: 433px;
   margin: auto;
   margin-top: 11px;
   display: flex;
