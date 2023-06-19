@@ -83,9 +83,8 @@ function checkForMatch() {
   });
 })();
 
-function gameOver() {
-  lockBoard = true;
-  const text = "Bummer! 😵‍💫 You lose!";
+// show message function
+function showMessage(text, buttonText) {
   setTimeout(() => {
     const messageDiv = document.createElement("div");
     messageDiv.setAttribute("id", "message");
@@ -93,7 +92,7 @@ function gameOver() {
 
     // create play again button
     const playAgainBtn = document.createElement("button");
-    playAgainBtn.textContent = "Try Again";
+    playAgainBtn.textContent = buttonText;
     playAgainBtn.addEventListener("click", () => {
       newGame();
       messageDiv.style.opacity = "0";
@@ -111,32 +110,13 @@ function gameOver() {
   }, 500);
 }
 
+function gameOver() {
+  lockBoard = true;
+  showMessage("Bummer! 😵‍💫 You lose!", "Try again");
+}
+
 function winGame() {
-  const text = "Awesome! 🤘 You rock!";
-  setTimeout(() => {
-    // create message div
-    const messageDiv = document.createElement("div");
-    messageDiv.setAttribute("id", "message");
-    messageDiv.textContent = text;
-
-    // create play again button
-    const playAgainBtn = document.createElement("button");
-    playAgainBtn.textContent = "Play Again";
-    playAgainBtn.addEventListener("click", () => {
-      newGame();
-      messageDiv.style.opacity = "0";
-      setTimeout(() => {
-        messageDiv.remove();
-      }, 700);
-    });
-
-    // add play again button to message div
-    messageDiv.appendChild(playAgainBtn);
-    document.body.appendChild(messageDiv);
-
-    // animate message div
-    messageDiv.style.opacity = "1";
-  }, 500);
+  showMessage("Awesome! 🤘 You Rock!", "Play again");
   console.log("Count has reached 9.");
 }
 
