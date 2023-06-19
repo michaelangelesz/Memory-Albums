@@ -48,7 +48,7 @@ function checkForMatch() {
     count++;
     console.log("Function has been called " + count + " times.");
     if (count === 12) {
-        winGame();
+      winGame();
     }
     resetBoard();
   }
@@ -137,7 +137,7 @@ function winGame() {
     // animate message div
     messageDiv.style.opacity = "1";
   }, 500);
-    console.log("Count has reached 9.");
+  console.log("Count has reached 9.");
 }
 
 function newGame() {
