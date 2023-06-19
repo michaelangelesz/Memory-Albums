@@ -176,7 +176,7 @@ function gameOver() {
 
 function winGame() {
   showMessage("Awesome! 🤘 You Rock!", "Play again");
-  console.log("Count has reached 9.");
+  console.log("Count has reached 12.");
 }
 
 function newGame() {
