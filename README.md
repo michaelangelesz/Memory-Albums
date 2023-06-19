@@ -1,5 +1,4 @@
 ## Memory-Albums
-# Milestone Project 1
 
 Memory was a favorite game when I was a kid, so it has been fun recreating it here. 
 
