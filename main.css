@@ -6,7 +6,6 @@
 
 body {
   height: 100vh;
-  width: 100vw;
   background: #74ebd5;
   background: -webkit-linear-gradient(to right, #77f3dc, #7f92e8);
   background: linear-gradient(to right, #77f3dc, #7f92e8);
@@ -19,44 +18,40 @@ body {
 h1 {
   font-family: papyrus;
   font-size: 3rem;
-  margin-top: 3rem;
-  text-align: center;
-  font-family: Papyrus;
-  color: indigo;
 }
 
-/* card styling and layout */
 section {
   display: grid;
   grid-template-columns: repeat(6, 11rem);
-    grid-template-rows: repeat(4, 11rem);
-    grid-gap: 1rem;
+  grid-template-rows: repeat(4, 11rem);
+  grid-gap: 1rem;
   perspective: 1000px;
 }
-
 .card {
   position: relative;
   transform-style: preserve-3d;
-  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;transform: rotateY(90deg);
+  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
-
 .face,
 .back {
   width: 100%;
   height: 100%;
   position: absolute;
+  pointer-events: none; /* This is important */
 }
-
-.back{
-background-color: #fff;
+.back {
+  background: #fff;
   backface-visibility: hidden;
 }
-
-.face {
+.toggleCard {
+  transform: rotateY(180deg);
 } 
 
-/* win/lose message divs */
+.face {
+  transform: rotateY(-180deg);
+}
+
 #message {
   position: fixed;
   display: flex;
@@ -68,9 +63,6 @@ background-color: #fff;
   background: #74ebd5;
   background: -webkit-linear-gradient(to right, #77f3dc, #7f92e8);
   background: linear-gradient(to right, #77f3dc, #7f92e8);
-  background-position: center center;
-  background-repeat: repeat;
-  background-size: 100% auto;
   font-family: papyrus;
   color: indigo;
   text-align: center;
@@ -79,8 +71,8 @@ background-color: #fff;
   font-size: 77px;
   padding: 20px;
   opacity: 0;
-  transition: opacity 3s ease-in-out;
-  z-index: 1;
+  transition: opacity 1s ease-in-out;
+  z-index: 9999;
 }
 
 #message button {
