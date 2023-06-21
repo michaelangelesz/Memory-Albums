@@ -6,6 +6,15 @@ The theme of this game is music albums! I relish any opportunity to share my fav
 
 Please enjoy my game! It is fun to look at.
 
+In building this project, I referred to the following resources:
+
+For the Lives counter and much of the styling:<br>
+[Awesome Vanilla JavaScript Memory Card Game Tutorial by developedbyed](https://youtu.be/-tlb4tv4mC4)
+
+For the cards layout, card flips, and match check:<br>
+[Memory Game in Vanilla JavaScript by Marina Ferreira](https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
+
+
 ## Album cover art citations:
 
 bboys.jpeg<br>

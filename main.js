@@ -18,10 +18,10 @@ function flipCard() {
 
   // locks board so you can't click more than 2 cards at a time
   if (lockBoard) return;
-  // prevents double clicking on same card
+  // prevents double clicking on the same card
   if (this === firstCard) return;
   this.classList.add("flip");
-
+  // first click
   if (!hasFlippedCard) {
     // first click
     hasFlippedCard = true;
