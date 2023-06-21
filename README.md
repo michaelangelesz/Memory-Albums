@@ -14,6 +14,7 @@ For the Lives counter and much of the styling:<br>
 For the cards layout, card flips, and match check:<br>
 [Memory Game in Vanilla JavaScript by Marina Ferreira](https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
 
+Big thanks to ChatGPT for helping compile the album cover art citations.
 
 ## Album cover art citations:
 
