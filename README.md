@@ -18,41 +18,41 @@ Big thanks to ChatGPT for helping compile the album cover art citations.
 
 ## Album cover art citations:
 
-bboys.jpeg [image source](https://beastieboys.com/discography/)<br>
-Shatan, Jeremy. Cover art for the Paul's Boutique album by the Beastie Boys. 1989. Record label: Capitol.
+Shatan, Jeremy. Cover art for the Paul's Boutique album by the Beastie Boys. 1989. Record label: Capitol.<br>
+[bboys.jpeg image source](https://beastieboys.com/discography/)
 
-bjork.jpeg [image source](https://shop.bjork.com/product/bjork-debut/)<br>
-Me Company. Cover art for the Debut album by Björk. 1993. Record label: One Little Indian. 
+Me Company. Cover art for the Debut album by Björk. 1993. Record label: One Little Indian.<br> 
+[bjork.jpeg image source](https://shop.bjork.com/product/bjork-debut/)
 
-cure.jpeg [image source](https://www.thecure.com/release/three-imaginary-boys/)<br>
-Jude, Phil. Cover art for the Three Imaginary Boys album by The Cure. 1979. Record label: Fiction.
+Jude, Phil. Cover art for the Three Imaginary Boys album by The Cure. 1979. Record label: Fiction.<br>
+[cure.jpeg image source](https://www.thecure.com/release/three-imaginary-boys/)
 
-doors.jpeg [image source](https://thedoors.com/music)<br>
-Diltz, Henry. Cover art for the Morrison Hotel album by The Doors. 1970. Record label: Elektra.
+Diltz, Henry. Cover art for the Morrison Hotel album by The Doors. 1970. Record label: Elektra.<br>
+[doors.jpeg image source](https://thedoors.com/music)
 
-floyd.jpeg [image source](https://www.pinkfloyd.com/design/album_covers.php)<br>
-Thorgerson, Storm and Hipgnosis. Cover art for the Dark Side of the Moon album by Pink Floyd. 1973. Record label: Harvest.
+Thorgerson, Storm and Hipgnosis. Cover art for the Dark Side of the Moon album by Pink Floyd. 1973. Record label: Harvest.<br>
+[floyd.jpeg image source](https://www.pinkfloyd.com/design/album_covers.php)
 
-jimi.jpeg [image source](https://www.jimihendrix.com/music/electric-ladyland-cddvd-deluxe-vinyl-editions/#content)<br>
-Havlicek, Karl and Kosh. Cover art for the Electric Ladyland album by the Jimi Hendrix Experience. 1968. Record label: Reprise Records.
+Havlicek, Karl and Kosh. Cover art for the Electric Ladyland album by the Jimi Hendrix Experience. 1968. Record label: Reprise Records.<br>
+[jimi.jpeg image source](https://www.jimihendrix.com/music/electric-ladyland-cddvd-deluxe-vinyl-editions/#content)
 
-lusciousj.jpeg [image source](https://lusciousjackson.us/)<br>
-Smith, Jill Cunniff and Roni Size. Cover art for the Fever In Fever Out album by Luscious Jackson. 1996. Record label: Grand Royal/Capitol Records.
+Smith, Jill Cunniff and Roni Size. Cover art for the Fever In Fever Out album by Luscious Jackson. 1996. Record label: Grand Royal/Capitol Records.<br>
+[lusciousj.jpeg image source](https://lusciousjackson.us/)
 
-madonna.jpeg [image source](https://www.madonna.com/discography/album/2/)<br>
-Ayeroff, Jeffrey Kent and Jeri Heiden. Cover art for the Like a Virgin album by Madonna. 1984. Record label: Sire Records.
+Ayeroff, Jeffrey Kent and Jeri Heiden. Cover art for the Like a Virgin album by Madonna. 1984. Record label: Sire Records.<br>
+[madonna.jpeg image source](https://www.madonna.com/discography/album/2/)
 
-marley.jpeg [image source](https://www.bobmarley.com/release/legend/)<br>
-Garrick, Neville. Cover art for the Legend: The Best of Bob Marley and the Wailers album. 1984. Record label: Island.
+Garrick, Neville. Cover art for the Legend: The Best of Bob Marley and the Wailers album. 1984. Record label: Island.<br>
+[marley.jpeg image source](https://www.bobmarley.com/release/legend/)
 
-redhot.jpeg [image source](https://redhotchilipeppers.com/music/)<br>
-Gottlieb, Kevin. Cover art for the One Hot Minute album by Red Hot Chili Peppers. 1995. Record label: Warner Bros. Records.
+Gottlieb, Kevin. Cover art for the One Hot Minute album by Red Hot Chili Peppers. 1995. Record label: Warner Bros. Records.<br>
+[redhot.jpeg image source](https://redhotchilipeppers.com/music/)
 
-tribe.jpeg [image source](https://atribecalledquest.com/home/portfolio/the-low-end-theory/)<br>
-Gravillis, Kenny. Cover art for The Low End Theory album by A Tribe Called Quest. 1991. Record label: Jive.
+Gravillis, Kenny. Cover art for The Low End Theory album by A Tribe Called Quest. 1991. Record label: Jive.<br>
+[tribe.jpeg image source](https://atribecalledquest.com/home/portfolio/the-low-end-theory/)
 
-u2.jpeg [image source](https://www.u2.com/music)<br>
-Averill, Steve. Cover art for The Joshua Tree album by U2. 1987. Record label: Island.
+Averill, Steve. Cover art for The Joshua Tree album by U2. 1987. Record label: Island.<br>
+[u2.jpeg image source](https://www.u2.com/music)
 
-cassette.jpeg [image source](https://pixabay.com/photos/announcer-audio-neon-cassette-316585/)<br>
-Used for back of card.
+Used for back of card:<br>
+[cassette.jpeg image source](https://pixabay.com/photos/announcer-audio-neon-cassette-316585/)
