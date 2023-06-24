@@ -21,17 +21,12 @@ body {
 }
 
 h1 {
+  color: #indigo;
   font-family: papyrus;
   font-size: 3rem;
   margin-top: 3rem;
-  background: linear-gradient(
-    to right,
-    transparent 0%,
-    #7f92e8 3%,
-    #77f3dc 97%,
-    transparent 100%
-  );
   width: 100%;
+  height: 7rem;
 }
 
 h2 {
@@ -47,7 +42,7 @@ h2 {
   width: 1000px;
   height: 433px;
   margin: auto;
-  margin-top: 11px;
+  margin-top: 0;
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;
@@ -79,6 +74,7 @@ h2 {
   background: antiquewhite;
   backface-visibility: hidden;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  border-radius: 5px;
   top: 0;
   left: 0;
 }
