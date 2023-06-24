@@ -24,6 +24,14 @@ h1 {
   font-family: papyrus;
   font-size: 3rem;
   margin-top: 3rem;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    #7f92e8 3%,
+    #77f3dc 97%,
+    transparent 100%
+  );
+  width: 100%;
 }
 
 h2 {
